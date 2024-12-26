@@ -37,7 +37,7 @@ const ServiceCard = ({ index, title, icon }) => (
 
 const About = () => {
   return (
-    <>
+    <div className="flex justify-center items-center flex-col text-center"> {/* Centering the content */}
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
@@ -45,21 +45,17 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] mx-auto' // Ensure it's centered
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I am a Master's in Computer Science student at NJIT with a deep passion for full-stack development. I focus on building scalable, high-performance web applications that prioritize seamless user experiences. My expertise spans JavaScript, TypeScript, and frameworks like Next.js, Node.js, and React, alongside proficiency in cloud technologies such as AWS. As a self-driven learner, I am committed to continuous growth and always seek opportunities to enhance my skills. I believe in the power of hard work and aim to deliver impactful, high-quality results in every project I undertake.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-20 flex flex-wrap gap-10 justify-center'> {/* Centering the service cards */}
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

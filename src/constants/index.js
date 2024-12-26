@@ -1,7 +1,6 @@
 import {
     mobile,
     backend,
-    creator,
     web,
     javascript,
     typescript,
@@ -15,47 +14,46 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
+    suntek,
+    LMS,
+    COM,
+    PRO,
     threejs,
+    njit
   } from "../assets";
   
   export const navLinks = [
     {
       id: "about",
-      title: "About",
+      title: "About Me",
     },
     {
       id: "work",
-      title: "Work",
+      title: "Work Experience",
+    },
+    {
+      id: "Projects",
+      title: "Projects",
     },
     {
       id: "contact",
       title: "Contact",
     },
+   
   ];
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Full-Stack Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Software Developer",
       icon: mobile,
     },
     {
       title: "Backend Developer",
       icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
     },
   ];
   
@@ -116,151 +114,95 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Software Developer Intern",
+      company_name: "Suntek Corp Solutions Pvt Ltd.",
+      icon: suntek,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "Sep 2022 - Dec 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
+        "Created an automated assessment platform using Python, enabling real-time evaluation of students’ Data Structures and Algorithms (DSA) skills, which reduced grading time by 40%, and improved feedback efficiency.",
+        "Spearheaded the development of a data analytics dashboard to track student performance metrics, identifying key areas for improvement and facilitating targeted instructional strategies that boosted student completion rates by 25%.",
+        "Implementing responsive design and ensuring cross-browser compatibility.",      ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Teaching Assistant",
+      company_name: "New Jerset Institute of Technology",
+      icon: njit,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Nov 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Facilitated personalized tutoring sessions for over 40 students, implementing targeted strategies to address individual learning obstacles; resulted in a significant decrease in course dropouts and enhanced overall academic success.",
+        "Built Python scripts to visualize complex data structures and algorithms, resulting in a 50% improvement in students’ conceptual clarity and engagement in coding assignments.",
       ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-  ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Path-Finder",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "PathFinder is a web-based platform that enables users to access, manage, and engage with online courses in a seamless learning environment. It offers a scalable solution for educators and learners, supporting secure course storage, streamlined billing, and up to 5,000 concurrent users.",
       tags: [
         {
-          name: "react",
+          name: "Next.js",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "AWS",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Stripe",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: LMS,
+      source_code_link: "https://github.com/hemanth0504/PathFinder",
     },
     {
-      name: "Job IT",
+      name: "Connectly",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Connectly is a web-based platform that facilitates secure and efficient team communication through real-time messaging and user interactions. Designed to support seamless collaboration, it ensures scalability and high availability for over 1,000 users, making it a robust solution for team-based workflows.",
       tags: [
         {
-          name: "react",
+          name: "React",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "Convex",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "Next.js",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: COM,
+      source_code_link: "https://github.com/hemanth0504/Connectly",
+      live_link : "https://connectly-app-hemanth-s-projects-429ff77e.vercel.app/auth"
     },
     {
-      name: "Trip Guide",
+      name: "Project-360X",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Project360X is a web-based platform that provides a comprehensive and user-friendly dashboard for managing projects in real-time. It features a scalable and efficient architecture, enabling streamlined data handling, responsive design, and improved query performance for enhanced productivity and collaboration.",
       tags: [
         {
-          name: "nextjs",
+          name: "Prisma",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "PostgreSQL ",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Redux-Toolkit",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: PRO,
+      source_code_link: "https://github.com/hemanth0504/Project-360X",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };
   
